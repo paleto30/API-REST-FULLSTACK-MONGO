@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(1, 22, 19) !important;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: justify;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.heading {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 4.5rem;
+  height: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.card-title {
+  color: black;
+}
+a {
+  font-size: 20px !important;
+}
+
+/* HEADER AND FOOTER */
+
+.main-header {
+  background-color: white;
+}
+.bg-verde {
+  background-color: #c8d434;
+}
+.navbar-general a {
+  color: black;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+.navbar-uts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+/* 
+==========================================================================================================
+
+*/
+.btnM{
+  font-size: 20px;
+}
+
+
+.lemodal{
+  font-size: large;
+}
+
+
+/* 
+)==================================================================================================
+*/
+
+#categoria{
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.inputt{
+  height: 35px;
+  font-size: 16px;
+  border-radius: 20px;
+  border-top: 2px solid rgb(80, 255, 240);
+  border-bottom: 2px solid rebeccapurple;
+  border-left: 2px solid rgb(40, 255, 40);
+  border-right: 2px solid orange;
+  font-weight: 700;
+}
+
+.imgT{
+  width: 15px;
+}
+.botonesT{
+  height: 35px;
+}
+
+.btnE{
+  font-size: large;
+}
+
+.tablas{
+  font-size: 17px;
+}
+.tb{
+  background-color: white;
+  text-align: center;
+}
+
+.trr:hover{
+  background-color: #d8e263;
+}
+.th{
+  text-align: center;
+}
+
+.labels{
+  font-size: 15px;
+}
+

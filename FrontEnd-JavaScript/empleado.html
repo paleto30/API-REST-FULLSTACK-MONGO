@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous"
+/>
+<!-- CSS only -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="styles.css"/>
+
+<title>Empleados</title>
+</head>
+<header id="main-header" class="main-header">
+    <section class="navbar-uts">
+      <img src="img/logo.png" class="logo" alt="Logo" />
+      <nav class="navbar-general">
+        <a href="index.html">Categorias</a>
+        <a href="productos.html">Productos</a>
+        <a href="empleado.html">Empleados</a>
+        <a href="Cliente.html">Clientes</a>
+      </nav>
+      <!--  <button class="btn-academic bg-info">E-market</button> -->
+    </section>
+</header>
+<body>
+    <header class="heading">
+        <h1>Empleados</h1>
+    </header>
+
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-lg btn-outline-success btnE" data-toggle="modal" data-target="#exampleModal">
+            Agregar Nuevo Empleado
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agregar Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                    
+                        <form id="formularioE">
+                            <div class="form-group">
+                              <label for="nombre" class="labels" >Nombre:</label>
+                              <input type="text" class="form-control inputt" id="nombre" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="cedula" class="labels" >Cedula</label>
+                              <input type="text" class="form-control inputt" id="cedula" required> 
+                            </div>     
+                            <div class="form-group">
+                                <label for="foto" class="labels">Foto</label>
+                                <input type="text" class="form-control inputt" id="foto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo" class="labels">Correo</label>
+                                <input type="email" class="form-control inputt" id="correo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" class="labels">Telefono</label>
+                                <input type="text" class="form-control inputt" id="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="direccion" class="labels">Direccion</label>
+                                <input type="text" class="form-control inputt" id="direccion" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cargo" class="labels">Cargo</label>
+                                <input type="text" class="form-control inputt" id="cargo" required>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal de detalles -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalDetalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detalles del Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modaldetail">                    
+                        <!--  aqui van los detalles del empleado -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-4">
+        <table class="table tablas">
+            <thead class="thead-dark th">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody class="tb" id="content"> 
+               <!-- aqui van todos los registros de empleado --> 
+            </tbody>
+          </table>
+    </div>
+
+
+
+
+
+<script src="js/empleado.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+<footer id="pie-pagina" class="bg-verde text-white mt-5 p-5">
+    <div class="container">
+      <div class="col">
+        <p class="lead text-center">Copyright &copy; Compras en Linea</p>
+      </div>
+    </div>
+</footer>
+</html>
